@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FARAemotions</title>
+    <script src="https://kit.fontawesome.com/1b82dada0e.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="image/imgTitle.png" type="image/x-icon">
+</head>
+
+<body>
+     <div class="logo">
+         <img src="./image/logo.png" />
+     </div>
+
+     <section class="background">
+            <header class="header" id="header">
+                  <h1>Unlock the Essence of Emotion in Cosmetics</h1>
+                  <p>We believe that every fragrance tells a story.</p>
+                  <p><a href="https://www.faravelligroup.com/fara-emotions">FARAemotions by Faravelli </a>
+                    is <strong>an exclusive line of cosmetic fragrances</strong> meticulously crafted to evoke emotion, enriching skincare, body care, hair care, and makeup products with a touch of luxury and sophistication.
+                  </p>
+                  <p>FARAemotions is more than just a fragrance brand;<br /><strong>it's a sensory journey.</strong></p>
+                  <p>Developed in collaboration with <strong>renowed perfumers</strong>, each fragrance in our collection is a masterpiece, designed to captivate the senses and elevate your cosmetic formulations.</p>
+                  <img src="./image/circle-brand.png" alt="Brand name" />
+            </header>
+            
+            <form class="form-brief" id="form-brief" action="/submit">
+                  
+                <h3 class="item-center">Ready to elevate your cosmetic formulations with FARAemotions? Contact us today to request more information and share your brief for personalized support.</h3>
+                <div class="date-text-input">
+                    <input type="text" placeholder="Name*" name="userInfo" required />
+                    <input type="text" placeholder="Company*" name="userInfo" required />
+                    <input type="email" placeholder="Email*" name="userInfo" required />
+                    <input type="url" placeholder="Website*" name="userInfo" required />
+                </div>
+
+                <select id="country" name="userInfo" required>
+                    <option value="" selected disabled>--- Select your country ---</option>
+                          <!--JS must be connected-->
+                </select>
+
+                <h3>Indicate one or more collections for which you would like more information</h3>
+                
+                <div class="container-collection"> 
+                    <div class="checkbox-collection">
+                        <input type="checkbox" name="flower-collection" value="moreInfo" id="flower" />
+                        <label for="flower">Scent of a flower</label> 
+                    </div>
+                    
+                    <div class="checkbox-collection">
+                        <input type="checkbox" name="temptation-collection" value="moreInfo" id="temptation" />
+                        <label for="temptation">Temptation</label>
+                    </div>
+
+                    <div class="checkbox-collection">
+                        <input type="checkbox" name="grourmand-collection" value="moreInfo" id="gourmand" />
+                        <label for="gourmand">Gourmand addiction</label>
+                    </div>
+
+                    <div class="checkbox-collection">
+                        <input type="checkbox" name="special-collection" value="moreInfo" id="special" />
+                        <label for="special">Special</label>
+                    </div>
+
+                    <div class="checkbox-collection">
+                        <input type="checkbox" name="summerGlow-collection" value="moreInfo" id="summerGlow" />
+                        <label for="summerGlow">Summer glow</label>
+                    </div>
+                    
+                    <div class="checkbox-collection">
+                        <input type="checkbox" name="xmasHoliday-collection" value="moreInfo" id="xmasHoliday" />
+                        <label for="xmasHoliday">Xmas Holidays</label>
+                    </div>
+
+                    <div class="checkbox-collection">
+                        <input type="checkbox" name="impossGarden-collection" value="moreInfo" id="imposGarden" />
+                        <label for="imposGarden">Impossible garden</label>
+                    </div>
+                    
+                    <div class="checkbox-collection">
+                        <input type="checkbox" name="kosmèo-collection" value="moreInfo" id="kosmèo" />
+                        <label for="kosmèo">Kosmèo</label>
+                    </div>
+                </div>     
+                 
+                <div class="checkbox-sample">
+                    <input type="checkbox" name="requiredSample" value="yes" id="sample" required/>
+                    <label for="sample">I would like to request sample(s)*</label>
+                    
+                    <p class="sample-note">*The cost of sample(s) + shipping costs will be reimbursed on the first order. Contact us to know more</p>
+                </div>
+                  
+                <div class="checkbox-project">
+                    <input type="checkbox" name="discussion" id="projectTalk" />
+                    <label for="projectTalk">I would like to discuss my project</label>
+                </div>
+
+                <h4 class="title-textarea">Tell us what you want to know or tell us about your project</h4>
+                <textarea id="message"  name="message" rows="7" placeholder="Message"></textarea>
+                  
+                <h4 class="robot-valid">Prove that you are not a robot: write the result of the sum:<br />
+                    <span id="sumRandom">19+8</span>
+                </h4>
+                <input type="number" id="robotValidation" name="number" required />
+                  
+                <div class="checkbox-privacy">
+                    <input type="checkbox" id="privacy" name="agreementPrivacy" required />
+                    <label for="privacy">By filling in this form you accept our <a href="https://faravelli.it/privacy-policy">privacy policy*</a>.</label>
+                </div>
+            
+                <button type="submit" method="POST" id="briefSubmitBtn">SEND</button>
+
+            </form>
+     </section>
+
+     <section class="description">
+        <h2>A new way of making fragrances: "All the emotions, one distributor"</h2>
+
+        <p>For us every fragrance is emotion! An emotion that manufacturers can take and use to enrich their cosmetics, so that this exceptional quality is perceived by the customer even before they 'wear' the product.</p>
+        <p>With FARAemotions, we put all our expertise at the service of our customers, acting as a link between the world's best fragrance manufacturers and the cosmetics industry, to meet their quality and function requirements without any compromise.</p>
+    </section>
+
+    <section class="cards" id="cards">
+        <h2>Explore our collections</h2> 
+
+        <div class="container-cards">  
+
+            <div class="card-product">
+                <img src="./image/flower.jpg" class="card-product" alt="Card 1" />
+                <div class="overlay">
+                    <h5 class="name"> SCENT OF A FLOWER</h5>
+                    <p>Fresh yet intense and refined notes, just like the spring season that suddenly bewitches and overwhelms.</p>
+                    <p><stron>Featuring:</stron><i> Citrus Water, Pumpkin Flower, Rhubarb, Gentian, Salt and Water, Osmanthus Petals.</i></p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <img src="./image/garden.jpg" class="card-product" alt="Card 2" />
+                <div class="overlay">
+                    <h5 class="name">TEMPTATION</h5>
+                    <p>Warm, intense, enveloping notes that lend deep expression to any compositions.</p>
+                    <p><strong>Featuring:</strong><i>  Tuberose, Cognac, Leather, Tobacco, Sparkling wine.</i></p>
+                </div>
+            </div>
+            
+            <div class="card-product"> 
+                <img src="./image/gourmand.jpg" class="card-product" alt="Card 3" />
+                <div class="overlay">
+                    <h5 class="name">GOURMAND ADDICTION</h5>
+                    <p> Inspired by the world of patisserie, inviting and sophisticated; a perceptive mix capable of stimulating different senses, bringing back memories of ancient flavours.</p>
+                    <p><strong>Featuring:</strong><i> Toasted sugar, Milk, Vanilla.</i></p>
+                </div>
+            </div>
+            
+            <div class="card-product">
+                <img src="./image/special.jpg" class="card-product" alt="Card 4" />
+                <div class="overlay">
+                    <h5 class="name">SPECIAL</h5>
+                    <p>A line of NATRUE, COSMOS AND ALLERGEN-FREE certified and certifiable fragrances.</p>
+                    <p><strong> Featuring:</strong><i>Fresh Citrus, Floral Thyme, Helichrysum, By the fire place, Frangipani, Milk, Vanilla Caramel.</i></p>
+                </div>
+            </div>
+        
+            
+
+            <div class="card-product">
+                <img src="./image/summer.jpg" class="card-product" alt="Card 5" />
+                <div class="overlay">
+                    <h5 class="name">SUMMER GLOW</h5>
+                    <p>Sparkling, radiant, and intriguing; an interesting fusion of tradition and innovation capturing the essence of summer.</p>
+                    <p><strong> Featuring:</strong><i>  Spice Rose, Fresh Petrichor, Fresh Tonic, Wood Citrus, Amber Rose & Patchouli.</i></p>
+                </div>
+            </div>
+            
+            <div class="card-product">
+                <img src="./image/xmas.jpg" class="card-product" alt="Card 6" />
+                <div class="overlay">
+                    <h5 class="name">XMAS HOLIDAYS</h5>
+                    <p>A unique and original interpretation of the winter holiday season.</p>
+                    <p><strong> Featuring:</strong><i>  Balsam of Tolu, Fir Balsam, Bitter Orange, Birch Tar, Pear, Dark Chocolate, Iris, and Pine.</i></p>
+                </div>
+            </div>
+        
+            <div class="card-product">
+                <img src="./image/garden.jpg" class="card-product" alt="Card 7" />
+                <div class="overlay">
+                    <h5 class="name"> IMPOSSIBLE GARDEN</h5>
+                    <p>A vibrant blend of boldness and delicacy, power and freshness, pure technology and naturalness, taking us to the heart of a realm where reality defies all expectation.</p>
+                    <p><strong> Featuring:</strong><i> Spiny Peach, Bloom Up, Flower Shield, Water Field, and Aqua Tech.</i></p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <img src="./image/kosmeo.jpg" class="card-product" alt="Card 8" />
+                <div class="overlay">
+                    <h5 class="name">KOSMEO</h5>
+                    <p>Experience timeless luxury with six fragrances inspired by ancient mythology, each blending character and elegance. Featuring: Asudem, Biacca di Seta, L’Eco di Narciso, La Fucina di Efesto, Adonia, Lite tra Divinità.</p>
+                </div>
+            </div>
+
+        </div> 
+
+        <p class="cards-note"><i><strong>Note:</strong> Our lines are <strong>just examples of what we can do</strong>. Share your brief with us, and let us<strong> tailor a fragrance</strong> solution that meets <strong>your specific needs</strong>.</i></p>
+
+    </section>
+
+    <section id="whyUs">
+        <h2>Why Choose <span>F</span><span>A</span><span>R</span><span>A</span>emotions?</h2>
+        <p>Discover what sets us apart and makes us the ideal partner for your fragrance needs.</p>
+        
+        <div class="container-reasons">
+             <div class="reason-card">
+                <img src="./image/speed.png" alt="image" class="reason-img">
+                <h6 class="reason-title">High customizable</h6>
+             </div>
+
+             <div class="reason-card">
+                <img src="./image/variety.png" alt="image" class="reason-img">
+                <h6 class="reason-title">Variety and Originality</h6>
+             </div>
+
+             <div class="reason-card">
+                <img src="./image/italy.png" alt="image" class="reason-img">
+                <h6 class="reason-title">Made in Italy</h6>
+             </div>
+
+             <div class="reason-card">
+                <img src="./image/speed.png" alt="image" class="reason-img">
+                <h6 class="reason-title">Speed and competence</h6>
+             </div>
+
+             <div class="reason-card">
+                <img src="./image/smallq.png" alt="image" class="reason-img">
+                <h6 class="reason-title">Small quantity</h6>
+             </div>
+
+        </div>
+    </section>
+    
+    <section id="footer">
+        <p>FARAemotions is a brand of Giusto Faravelli spa. All rights reserved.</p>
+    </section>
+
+
+</body>
+         

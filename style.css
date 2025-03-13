@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    max-width: 1920px;
+    width: 100%;
+}
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #212529;
+}
+a{
+    color: black;
+}
+/*logo field*/
+.logo {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin-left: 15px;
+}
+/* background + description, img*/
+
+.background {
+    background-image: url(./image/headerlanding.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10px;
+    
+    height: auto;
+    width: 100%;
+}
+
+.header{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 2em;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header p{
+    margin-bottom: 25px;
+}
+.header img {
+    width: 30%;
+}
+
+/* common properties brief-form */
+
+#form-brief{
+    background-color: white;
+    padding: 20px 15px 60px 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 35%;
+}
+.date-text-input input,
+#country,
+#robotValidation {
+    height: 40px;
+    border: .5px solid #d3d3d3d3;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: .9em;
+}
+      /*CUSTOMcheckbox */
+form input[type="checkbox"]{
+    display: none;
+}
+
+form input[type="checkbox"] + label{
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: .9em;
+}
+
+form input[type="checkbox"] + label::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: .2px solid #d3d3d3d3;
+    background-color: white;
+    border-radius: 4px;
+    transition: border-color .3s, box-shadow .3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="checkbox"]:checked + label::after {
+    content: url(./image/check-solid.svg);
+    width: 10px;
+    font-weight: bolder;
+    height: auto;
+    position: absolute;
+    left: 3px;
+    bottom: .7px;
+}
+
+form input[type="checkbox"]:checked + label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 1);
+}
+/*head Adaptive design*/
+
+    
+      /* user credentials    brief-form*/
+
+h3.item-center {
+    text-align: center; 
+}
+
+form h3{
+    font-size: 1em;
+}
+
+.date-text-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.date-text-input input{
+    width: 48%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#country{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+   /* checkbox of collection for more info    brief-form*/
+.container-collection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 3px ;
+}
+.checkbox-collection{
+    width: 40%;
+}
+
+.checkbox-collection lable {
+    font-size: .9em;
+}
+
+   /* consentions    1. SAMPLE,   2. DISCUS.PROGECT,   MESSAGE,   BOT-valid,   PRIVACY      brief-form*/
+.checkbox-project,
+.title-textarea {
+    margin-top: 25px;
+}
+.container-collection{
+    margin-bottom: 10px;
+}
+
+.checkbox-sample label,
+.checkbox-project label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.checkbox-sample p{
+    font-size: .7em;
+    margin-top: 3px;
+}
+                     /*3. MESSAGE*/
+.title-textarea{
+    font-size: .9em;
+}
+
+#message{
+    font-family: inherit;
+    width: 100%;
+    height: 200px;
+    border: .5px solid #d3d3d3d3;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-left: 13px;
+    font-size: .8em;
+    color: #212529;
+    font-weight: 400;
+}
+
+#message:focus{
+    
+    border: .5px solid #007bff;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 1);
+}
+             /*  4. BOT-validation*/
+.robot-valid{
+    font-size: .9em;
+    margin-top: 25px;
+}
+#robotValidation{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+             /*  6. Button -  submition of form  */
+
+#briefSubmitBtn{
+    width: 100%;
+    height: 40px;
+    font-size: .9em;
+    margin-top: 20px;
+    color: rgb(45, 45, 45);
+    border: .5px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color .3s ease;
+}
+#briefSubmitBtn:hover{
+    background-color: gray;
+    color: white;
+}
+
+/*section with text.....*/
+.description {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+.description h2,
+.description p:not(:last-child) {
+   margin-bottom: 30px;
+}
+ /*section  collection (gallery)*/
+  #cards{
+    background-image: url("./image/sfondocollezioni.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    text-align: center;
+  }
+  .cards h2{
+    margin-bottom: 50px;
+  }
+  .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+  }
+  .card-product{
+    position: relative;
+    overflow: hidden;
+    width: 310px;
+    height: 310px;
+  }
+  .card-product img{
+    width: 100%;
+    height: 100%;
+    transition: filter .5s ease-in-out;
+  }
+  /*for hover effect it's necessary to have another(::after) layer with absolute position + opacity*/
+  .card-product::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #b1c1d0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .card-product:hover::after{
+    opacity: 1;
+  }
+  .overlay{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+  }
+  .card-product:hover .overlay{
+    opacity: 1;
+  }
+  .overlay h5{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+               /*section:  Why Choose FARAemotions?*/
+#whyUs{
+    text-align: center;
+}
+#whyUs h2 span{
+    position: relative;
+    animation: letDance 0.4s ease infinite alternate;
+}
+        #whyUs h2 span:nth-child(1){
+            animation-delay: 0s;
+        }
+        #whyUs h2 span:nth-child(2){
+            animation-delay: 0.1s;
+        }
+        #whyUs h2 span:nth-child(3){
+            animation-delay: 0.2s;
+        }
+        #whyUs h2 span:nth-child(4){
+            animation-delay: 0.3s;
+        }
+
+        @keyframes letDance{
+            100%{
+                top: -10px;
+            }
+        }
+#whyUs p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.container-reasons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.reason-card {
+    width: calc(90% / 5);
+    font-size: 1.5em;
+    font-weight: 900;
+
+}
+
+.reason-card img{
+    width: 60%;
+}
+.reason-card:hover img + h6{
+    transform: scale(1.8);
+    color:#ffb909
+}
+                      /*footer*/
+#footer{
+    background-color: #000;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .background {
+        background-image: url(./image/headerlanding_768.jpg);
+        display: block;
+        margin: auto;
+        padding-left: 0;
+    }
+    .header{
+        margin: auto;
+        max-width: 100%;
+    }
+    .header img {
+        width: 70%;
+        margin-bottom: 50px;
+    } 
+    
+    #form-brief{
+        width: 100%;
+    }
+
+    .date-text-input, 
+    .container-collection{
+        display: block;
+    }
+    .date-text-input input{
+        width: 100%;
+    }
+    .checkbox-collection{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .robot-valid br{
+        display: none;
+    }
+    .container-cards{
+        gap: 40px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 80px;
+      }
+    .card-product{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+      }
+      .overlay{
+        top: 35%;
+        left: 10%;
+        right: 10%;
+      }
+      .overlay h5{
+        margin-bottom: 80px;
+      }
+
+      .container-reasons{
+        display: block;
+      }
+      .reason-card {
+        width: 100%;
+    }
+    .reason-card img{
+        width: 85%;
+    }
+
+}
