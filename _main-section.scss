@@ -1,0 +1,85 @@
+.background {
+    background-image: url(../image/bachground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-section{
+    padding: 218px 0 185px;
+
+    &__title{
+        font-size: 85px ;
+        font-weight: 700;
+        color: white;
+        width: 100%;
+        max-width: 917px;
+        margin: auto;
+        text-transform: uppercase;
+    }
+
+    &__text{
+        font-size: 25px;
+        margin: 35px 0 60px;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-section{
+        padding: 183px 0 153px;
+
+        &__title{
+            font-size: 60px;
+            width: 100%;
+            max-width: 697px;
+           }
+        
+        &__text{
+            font-size: 18px;  
+        }
+
+        .link {
+            width: 248px;
+            height: 48px;
+            font-size: 17px;
+            line-height: 48px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-section{
+        padding: 171px 0 99px;
+
+        &__title{
+            font-size: 50px;
+            width: 100%;
+            max-width: 430px;
+        }
+    }
+}
+@media screen and (max-width: 475px) {
+    .main-section{
+        padding: 80px 0 40px;
+
+        &__title{
+            font-size: 30px;
+            width: 100%;
+            max-width: 260px;  
+        }
+
+        &__text{
+            font-size: 14px;
+        }
+    
+       .link {
+            width: 180px;
+            height: 30px;
+            font-size: 13px;
+            line-height: 30px;
+            margin: 0 auto 40px;
+       }
+    }
+}
